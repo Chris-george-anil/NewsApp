@@ -10,7 +10,7 @@ const NewsCard = ({ data, title }) => {
             }
 
 
-            {news.map(ev => (
+            {news?.map(ev => (
                 <Link key={ev.title} href={ev.url} target="_blank">
                     <div className='card'>
                         {ev.urlToImage ? <img src={ev.urlToImage} alt={"Image"} height={250} width={250} /> :
