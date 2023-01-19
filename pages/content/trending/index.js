@@ -41,7 +41,7 @@ export default Trending
 
 export async function getStaticProps(context) {
 
-    const res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.API_KEY}`);
+    const res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=9359210ff01a464796a0c0558242e088`);
     const data = await res.json();
     return { props: { data: data } }
 }

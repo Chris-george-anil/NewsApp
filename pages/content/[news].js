@@ -22,7 +22,7 @@ export async function getServerSideProps(context) {
             }
         }
     }
-    const res = await fetch(`https://newsapi.org/v2/everything?q=${query}&sortBy=publishedAt&apiKey=${process.env.API_KEY}`);
+    const res = await fetch(`https://newsapi.org/v2/everything?q=${query}&sortBy=publishedAt&apiKey=9359210ff01a464796a0c0558242e088`);
     const data = await res.json();
     // console.log("Slug", data);
     return { props: { data: data, title: query } }
